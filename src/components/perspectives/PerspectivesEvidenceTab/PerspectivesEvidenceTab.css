@@ -1,0 +1,131 @@
+@reference "tailwindcss";
+
+.perspectives-evidence {
+  @apply flex flex-col gap-6;
+}
+
+.perspectives-evidence__table-row {
+  @apply min-w-0;
+}
+
+.perspectives-evidence__bottom-row {
+  @apply grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6 min-w-0;
+}
+
+.perspectives-evidence__table-card {
+  @apply overflow-hidden;
+}
+
+.perspectives-evidence__table-wrap {
+  @apply overflow-x-auto;
+}
+
+.perspectives-evidence__table {
+  @apply w-full text-sm text-left;
+}
+
+.perspectives-evidence__table th {
+  @apply px-4 py-3 font-medium text-gray-700 bg-gray-50 border-b border-gray-200;
+}
+
+.perspectives-evidence__sort-icon {
+  @apply inline-flex flex-col ml-1 text-gray-400 align-middle;
+}
+
+.perspectives-evidence__sort-icon svg {
+  @apply w-3 h-3 block -my-0.5;
+}
+
+.perspectives-evidence__table td {
+  @apply px-4 py-3 border-b border-gray-100;
+}
+
+.perspectives-evidence__table tbody tr:hover {
+  @apply bg-gray-50/50;
+}
+
+.perspectives-evidence__table-title {
+  @apply font-medium text-gray-900;
+}
+
+.perspectives-evidence__table-cell {
+  @apply text-gray-600;
+}
+
+/* Comments */
+.perspectives-evidence__comments-card {
+  @apply p-6;
+}
+
+.perspectives-evidence__card-title {
+  @apply font-semibold text-gray-800 mb-4 m-0;
+}
+
+.perspectives-evidence__comments-list {
+  @apply space-y-4 mb-4 list-none p-0 m-0;
+}
+
+.perspectives-evidence__comment {
+  @apply flex gap-3 p-3 rounded-lg bg-gray-100;
+}
+
+.perspectives-evidence__comment-body {
+  @apply flex-1 min-w-0;
+}
+
+.perspectives-evidence__comment-meta {
+  @apply flex items-center justify-between gap-2 mb-1;
+}
+
+.perspectives-evidence__comment-author {
+  @apply font-medium text-gray-800;
+}
+
+.perspectives-evidence__comment-date {
+  @apply text-sm text-gray-500;
+}
+
+.perspectives-evidence__comment-text {
+  @apply text-sm text-gray-700 m-0;
+}
+
+.perspectives-evidence__textarea {
+  @apply w-full px-3 py-2 border border-gray-200 rounded-lg text-sm text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none resize-y mb-4;
+}
+
+.perspectives-evidence__post-btn {
+  @apply inline-flex items-center gap-2 px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors;
+}
+
+.perspectives-evidence__post-icon {
+  @apply w-4 h-4;
+}
+
+/* Recent Activities */
+.perspectives-evidence__activities-card {
+  @apply p-6 min-w-0;
+}
+
+.perspectives-evidence__activities-list {
+  @apply space-y-3 list-none p-0 m-0;
+}
+
+.perspectives-evidence__activity {
+  @apply flex gap-3 text-sm;
+}
+
+.perspectives-evidence__activity-bullet {
+  @apply w-2 h-2 rounded-full bg-red-500 flex-shrink-0 mt-1.5;
+}
+
+.perspectives-evidence__activity-content {
+  @apply flex-1 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5;
+}
+
+.perspectives-evidence__activity-text {
+  @apply text-gray-800;
+}
+
+.perspectives-evidence__activity-time {
+  @apply text-gray-500 text-xs;
+}

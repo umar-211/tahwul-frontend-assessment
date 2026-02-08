@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.timeline-metric-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-8;
+}
+
+.timeline-metric-cards .stat-card {
+  @apply border border-gray-200 shadow-none;
+}

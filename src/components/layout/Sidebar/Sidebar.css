@@ -1,0 +1,60 @@
+@reference "tailwindcss";
+
+.sidebar__overlay {
+  @apply fixed inset-0 bg-black/50 z-40 lg:hidden;
+}
+
+.sidebar {
+  @apply w-64 min-h-screen flex flex-col fixed left-0 top-0 z-50 transform transition-transform duration-200 ease-in-out lg:translate-x-0;
+  background-color: var(--color-sidebar);
+}
+
+/* Hide on mobile when closed; always visible on lg+ */
+.sidebar--closed {
+  @apply max-lg:-translate-x-full;
+}
+
+.sidebar--open {
+  @apply translate-x-0;
+}
+
+.sidebar__header {
+  @apply p-6 flex items-center justify-between;
+}
+
+.sidebar__logo {
+  @apply text-xl font-bold text-white;
+}
+
+.sidebar__close-btn {
+  @apply lg:hidden p-2 text-white hover:bg-white/10 rounded;
+}
+
+.sidebar__close-icon {
+  @apply w-5 h-5;
+}
+
+.sidebar__nav {
+  @apply flex-1 px-3 pb-4;
+}
+
+.sidebar__nav-item {
+  @apply flex items-center gap-3 px-4 py-3 transition-colors cursor-pointer rounded-lg block mb-1;
+}
+
+.sidebar__nav-item:not(.sidebar__nav-item--active) {
+  @apply text-gray-300 hover:bg-white/10 hover:text-white;
+}
+
+.sidebar__nav-item--active {
+  @apply bg-blue-500 text-white;
+}
+
+.sidebar__footer {
+  @apply p-4 border-t border-white/10;
+}
+
+.sidebar__footer .avatar__name,
+.sidebar__footer .avatar__role {
+  @apply text-white;
+}

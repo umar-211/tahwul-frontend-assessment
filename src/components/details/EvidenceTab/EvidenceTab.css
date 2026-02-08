@@ -1,0 +1,89 @@
+@reference "tailwindcss";
+
+.evidence-tab {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-6;
+}
+
+.evidence-tab__main {
+  @apply lg:col-span-2 space-y-6;
+}
+
+.evidence-tab__table-card {
+  @apply overflow-hidden;
+}
+
+.evidence-tab__table-wrap {
+  @apply overflow-x-auto;
+}
+
+.evidence-tab__table {
+  @apply w-full text-sm text-left;
+}
+
+.evidence-tab__table th {
+  @apply px-4 py-3 font-medium text-gray-500 uppercase tracking-wider bg-gray-50;
+}
+
+.evidence-tab__table td {
+  @apply px-4 py-3 border-b border-gray-100;
+}
+
+.evidence-tab__table tbody tr:hover {
+  @apply bg-gray-50/50;
+}
+
+.evidence-tab__table-title {
+  @apply font-medium text-gray-900;
+}
+
+.evidence-tab__table-cell {
+  @apply text-gray-600;
+}
+
+.evidence-tab__table-footer {
+  @apply p-4 border-t border-gray-100;
+}
+
+.evidence-tab__aside {
+  @apply space-y-6;
+}
+
+.evidence-tab__card {
+  @apply p-6;
+}
+
+.evidence-tab__card-title {
+  @apply font-semibold text-gray-800 mb-4;
+}
+
+.evidence-tab__textarea {
+  @apply w-full h-32 px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none resize-none;
+}
+
+.evidence-tab__card-actions {
+  @apply mt-4 flex justify-end;
+}
+
+.evidence-tab__activities {
+  @apply space-y-3;
+}
+
+.evidence-tab__activity {
+  @apply flex gap-3 text-sm;
+}
+
+.evidence-tab__activity-dot {
+  @apply w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 flex-shrink-0;
+}
+
+.evidence-tab__activity-text {
+  @apply text-gray-800;
+}
+
+.evidence-tab__activity-time {
+  @apply text-gray-400 text-xs mt-0.5;
+}
+
+.evidence-tab__link {
+  @apply text-blue-600 text-sm font-medium mt-4 inline-block hover:underline;
+}

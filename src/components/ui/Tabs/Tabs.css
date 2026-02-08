@@ -1,0 +1,17 @@
+@reference "tailwindcss";
+
+.tabs {
+  @apply flex gap-0 border-b border-gray-200;
+}
+
+.tabs__tab {
+  @apply px-4 py-2.5 font-medium transition-colors border-b-2 border-transparent rounded-t-lg;
+}
+
+.tabs__tab:not(.tabs__tab--active) {
+  @apply text-gray-500 bg-gray-100/80 hover:bg-gray-100 hover:text-gray-700;
+}
+
+.tabs__tab--active {
+  @apply text-blue-700 border-blue-600 bg-blue-50;
+}

@@ -1,0 +1,64 @@
+@reference "tailwindcss";
+
+.header {
+  @apply flex items-center gap-4 px-4 py-3 bg-white border-b border-gray-200;
+}
+
+.header__right {
+  @apply flex items-center gap-2 ml-auto;
+}
+
+.header__menu-btn {
+  @apply flex-shrink-0 w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-gray-50;
+}
+
+/* Hide menu button on desktop (no collapse icon) */
+@media (min-width: 1024px) {
+  .header__menu-btn {
+    display: none;
+  }
+}
+
+.header__menu-icon {
+  @apply w-5 h-5;
+}
+
+.header__menu-icon--collapse {
+  @apply w-5 h-5;
+}
+
+.header__search {
+  @apply flex-1 flex items-center relative max-w-xl;
+}
+
+.header__search-icon {
+  @apply absolute left-3 w-4 h-4 text-gray-400 pointer-events-none;
+}
+
+.header__search-input {
+  @apply w-full pl-9 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none;
+}
+
+.header__notifications {
+  @apply relative flex-shrink-0 p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg;
+}
+
+.header__notifications-icon {
+  @apply w-5 h-5;
+}
+
+.header__notifications-dot {
+  @apply absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-red-500;
+}
+
+.header__user {
+  @apply flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer hover:bg-gray-200;
+}
+
+.header__user-name {
+  @apply text-sm font-medium text-gray-900;
+}
+
+.header__user-chevron {
+  @apply w-4 h-4 text-gray-500 flex-shrink-0;
+}

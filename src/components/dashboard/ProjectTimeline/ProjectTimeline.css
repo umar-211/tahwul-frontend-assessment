@@ -1,0 +1,95 @@
+@reference "tailwindcss";
+
+.project-timeline-card {
+  @apply shadow-md border border-gray-100 rounded-lg p-6 mb-6 overflow-visible;
+}
+
+.project-timeline__header {
+  @apply flex items-center justify-between;
+}
+
+.project-timeline__title {
+  @apply text-lg font-bold text-gray-900 m-0;
+}
+
+.project-timeline__year-wrap {
+  @apply relative inline-block;
+}
+
+.project-timeline__year-select {
+  @apply appearance-none bg-white border border-gray-300 text-gray-900 font-medium py-2 pl-3 pr-8 rounded-md text-sm cursor-pointer;
+}
+
+.project-timeline__chevron {
+  @apply absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none;
+}
+
+.project-timeline__track-wrap {
+  @apply relative pt-2 pb-8 px-2;
+  min-height: 5rem;
+}
+
+.project-timeline__track {
+  @apply absolute left-0 right-0 bg-gray-200;
+  top: 0.5rem;
+  height: 8px;
+  border-radius: 9999px;
+}
+
+.project-timeline__track--completed {
+  @apply bg-green-500 transition-all duration-300;
+  height: 8px;
+  border-radius: 9999px;
+}
+
+.project-timeline__milestones {
+  @apply absolute left-0 right-0;
+  top: 0.5rem;
+  height: 8px;
+  pointer-events: none;
+}
+
+.project-timeline__milestones .project-timeline__milestone {
+  pointer-events: auto;
+}
+
+.project-timeline__milestone {
+  @apply absolute flex flex-col items-center -translate-x-1/2;
+  top: 0;
+}
+
+/* Dot sits in the line row (first 6px) so it’s inside the line */
+.project-timeline__milestone .project-timeline__dot {
+  width: 8px;
+  height: 8px;
+  @apply rounded-full flex-shrink-0 z-10;
+  margin: 0;
+}
+
+.project-timeline__dot--completed-solid {
+  @apply bg-white;
+  border: 1px solid rgb(229 231 235);
+}
+
+.project-timeline__dot--completed-outline {
+  @apply bg-transparent;
+  border: 1px solid white;
+}
+
+.project-timeline__dot--incomplete {
+  @apply bg-red-500 border-0;
+}
+
+.project-timeline__label {
+  @apply mt-2 text-center flex flex-col gap-0.5 min-w-0 max-w-[10rem] px-1;
+  position: relative;
+  top: 6px;
+}
+
+.project-timeline__label-date {
+  @apply text-xs text-gray-500;
+}
+
+.project-timeline__label-desc {
+  @apply text-xs font-medium text-gray-700;
+}

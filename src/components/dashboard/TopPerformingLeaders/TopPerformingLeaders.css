@@ -1,0 +1,33 @@
+@reference "tailwindcss";
+
+.top-leaders {
+  @apply p-6;
+}
+
+.top-leaders__title {
+  @apply font-semibold text-gray-800 mb-4;
+}
+
+.top-leaders__list {
+  @apply space-y-4;
+}
+
+.top-leaders__item {
+  @apply flex items-center gap-4 border-b border-gray-200 pb-4;
+}
+
+.top-leaders__info {
+  @apply flex-1;
+}
+
+.top-leaders__name {
+  @apply font-medium text-gray-800;
+}
+
+.top-leaders__perspective {
+  @apply text-sm text-gray-500;
+}
+
+.top-leaders__score {
+  @apply font-semibold text-gray-800;
+}

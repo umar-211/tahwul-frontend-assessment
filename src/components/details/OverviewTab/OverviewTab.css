@@ -1,0 +1,25 @@
+@reference "tailwindcss";
+
+.overview-tab {
+  @apply space-y-4;
+}
+
+.overview-tab__row {
+  @apply grid grid-cols-1 md:grid-cols-[minmax(0,200px)_1fr] gap-0 items-stretch bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden;
+}
+
+.overview-tab__label {
+  @apply text-sm font-medium px-4 py-3 bg-gray-200 text-gray-700 flex items-center;
+}
+
+.overview-tab__content-card {
+  @apply p-4 bg-white border-l border-gray-200;
+}
+
+.overview-tab__text {
+  @apply text-sm text-gray-600 m-0 leading-relaxed;
+}
+
+.overview-tab__text--pre {
+  white-space: pre-line;
+}

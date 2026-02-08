@@ -1,0 +1,92 @@
+@reference "tailwindcss";
+
+.stat-card {
+  @apply p-5;
+}
+
+/* Metric layout: value left, icon top-right, label below (Figma) */
+.stat-card--metric {
+  @apply relative;
+}
+
+.stat-card--metric .stat-card__value--lead {
+  @apply text-2xl font-bold text-gray-900 mb-1;
+}
+
+.stat-card--metric .stat-card__label {
+  @apply text-sm text-gray-500 mb-0;
+}
+
+.stat-card__icon--top-right {
+  @apply absolute top-4 right-4 w-9 h-9 rounded flex items-center justify-center;
+  margin-bottom: 0;
+}
+
+.stat-card__icon--top-right svg {
+  @apply w-5 h-5;
+}
+
+.stat-card__icon {
+  @apply w-10 h-10 rounded-lg flex items-center justify-center mb-3;
+}
+
+.stat-card__icon svg {
+  @apply w-5 h-5;
+}
+
+.stat-card--blue .stat-card__icon {
+  @apply text-blue-600 bg-blue-50;
+}
+
+.stat-card--red .stat-card__icon {
+  @apply text-red-600 bg-red-50;
+}
+
+.stat-card--red .stat-card__icon--top-right {
+  @apply text-red-600 bg-transparent;
+}
+
+.stat-card--green .stat-card__icon {
+  @apply text-green-600 bg-green-50;
+}
+
+.stat-card--yellow .stat-card__icon {
+  @apply text-amber-600 bg-amber-50;
+}
+
+.stat-card--gray .stat-card__icon {
+  @apply text-gray-600 bg-gray-100;
+}
+
+.stat-card--orange .stat-card__icon {
+  @apply text-orange-600 bg-orange-50;
+}
+
+.stat-card--green .stat-card__value {
+  @apply text-green-600;
+}
+
+.stat-card--orange .stat-card__value {
+  @apply text-orange-600;
+}
+
+/* Red icon only - value stays dark via valueColor="dark" prop */
+.stat-card--red .stat-card__value:not(.stat-card__value--dark) {
+  @apply text-red-600;
+}
+
+.stat-card__label {
+  @apply text-sm text-gray-500 mb-1;
+}
+
+.stat-card__value {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+.stat-card__value--dark {
+  @apply text-gray-900;
+}
+
+.stat-card__sub-value {
+  @apply text-xs text-gray-400 mt-1;
+}

@@ -1,0 +1,29 @@
+@reference "tailwindcss";
+
+.recent-activities-card {
+  @apply p-6;
+}
+
+.recent-activities-card__title {
+  @apply font-semibold text-gray-800 mb-4;
+}
+
+.recent-activities-card__list {
+  @apply space-y-3;
+}
+
+.recent-activities-card__item {
+  @apply flex items-start gap-3 text-sm border-b border-gray-200 pb-4;
+}
+
+.recent-activities-card__dot {
+  @apply w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 flex-shrink-0;
+}
+
+.recent-activities-card__text {
+  @apply text-gray-800 flex-1;
+}
+
+.recent-activities-card__time {
+  @apply text-gray-500 text-xs flex-shrink-0;
+}

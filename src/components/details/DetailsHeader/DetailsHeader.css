@@ -1,0 +1,37 @@
+@reference "tailwindcss";
+
+.details-header {
+  @apply mb-6 bg-white rounded-lg border border-gray-100 shadow-sm;
+}
+
+.details-header__content {
+  @apply flex items-start justify-between gap-6 flex-wrap p-4;
+}
+
+.details-header__main {
+  @apply flex flex-col gap-1 flex-1 min-w-0;
+}
+
+.details-header__category {
+  @apply text-sm text-gray-600 mb-1 m-0 px-3 py-1.5 rounded-xl bg-gray-100 inline-block w-fit;
+}
+
+.details-header__title {
+  @apply text-xl font-bold text-[#1e3a5f] m-0 leading-tight;
+}
+
+.details-header__subtitle {
+  @apply text-sm text-gray-600 mt-1 m-0;
+}
+
+.details-header__progress-wrap {
+  @apply flex-shrink-0;
+}
+
+.details-header__progress-circle {
+  @apply w-20 h-20 rounded-full flex items-center justify-center border-2 border-green-600 bg-green-500;
+}
+
+.details-header__progress-value {
+  @apply text-lg font-bold text-white;
+}

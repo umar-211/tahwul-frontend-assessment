@@ -1,0 +1,118 @@
+@reference "tailwindcss";
+
+.progress-perspectives {
+  @apply border border-gray-200 shadow-none p-5 mb-8 bg-white;
+
+}
+
+.progress-perspectives__title {
+  @apply text-lg font-semibold text-gray-800 mb-4;
+}
+
+.progress-perspectives__legend {
+  @apply flex flex-wrap gap-4 mb-6 text-sm;
+}
+
+.progress-perspectives__legend-item {
+  @apply flex items-center gap-1.5;
+}
+
+.progress-perspectives__legend-dot {
+  @apply w-2 h-2 rounded-full;
+}
+
+.progress-perspectives__legend-dot--gray {
+  @apply bg-gray-400;
+}
+
+.progress-perspectives__legend-dot--orange {
+  @apply bg-orange-500;
+}
+
+.progress-perspectives__legend-dot--green {
+  @apply bg-green-500;
+}
+
+.progress-perspectives__legend-dot--light-blue {
+  @apply bg-sky-300;
+}
+
+.progress-perspectives__legend-dot--dark-blue {
+  @apply bg-blue-600;
+}
+
+.progress-perspectives__legend-dot--red {
+  @apply bg-red-500;
+}
+
+.progress-perspectives__legend-label {
+  @apply text-gray-600;
+}
+
+/* Columns: one per domain, domain card on top then section cards below */
+.progress-perspectives__columns {
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-4;
+}
+
+.progress-perspectives__column {
+  @apply flex flex-col gap-3 min-w-0;
+}
+
+/* Domain card: dark blue, title + percentage (Figma) */
+.progress-perspectives__domain-card {
+  @apply bg-gray-900 border-0 text-white px-2 py-4 flex flex-col gap-1;
+}
+
+.progress-perspectives__domain-title {
+  @apply text-xs leading-tight m-0 text-center;
+}
+
+.progress-perspectives__domain-value {
+  @apply text-sm font-semibold m-0 bg-gray-700 text-center rounded-lg mx-2;
+}
+
+/* Section cards: white with section name and numbered circles */
+.progress-perspectives__sections {
+  @apply flex flex-col gap-3;
+}
+
+.progress-perspectives__section-card {
+  @apply p-3 border border-gray-200 shadow-sm;
+}
+
+.progress-perspectives__section-title {
+  @apply text-xs text-gray-900 mb-2 m-0 leading-tight;
+}
+
+.progress-perspectives__circles {
+  @apply flex flex-wrap gap-1.5;
+}
+
+/* Numbered circles: small circle with number inside, color by status */
+.progress-perspectives__circle {
+  @apply w-6 h-6 rounded-full flex items-center justify-center text-xs font-medium text-white flex-shrink-0;
+}
+
+.progress-perspectives__circle--completed {
+  @apply bg-green-500;
+}
+
+.progress-perspectives__circle--in-progress {
+  @apply bg-orange-500;
+}
+
+.progress-perspectives__circle--not-started {
+  @apply bg-gray-400;
+}
+
+.progress-perspectives__circle--partially-uploaded {
+  @apply bg-sky-300 text-gray-800;
+}
+
+.progress-perspectives__circle--fully-uploaded {
+  @apply bg-blue-600;
+}
+
+.progress-perspectives__circle--delayed {
+  @apply bg-red-500;
+}

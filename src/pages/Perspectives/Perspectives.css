@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.perspectives-page {
+  @apply space-y-6;
+}
+
+.perspectives__tabs {
+  @apply mb-6;
+}

@@ -1,0 +1,49 @@
+@reference "tailwindcss";
+
+.stats-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4 mb-8;
+}
+
+.stats-cards__card {
+  @apply p-5;
+}
+
+.stats-cards__icon {
+  @apply w-10 h-10 rounded-lg flex items-center justify-center mb-3;
+}
+
+.stats-cards__icon--blue {
+  @apply text-blue-600 bg-blue-50;
+}
+
+.stats-cards__icon--red {
+  @apply text-red-600 bg-red-50;
+}
+
+.stats-cards__icon--green {
+  @apply text-green-600 bg-green-50;
+}
+
+.stats-cards__icon--yellow {
+  @apply text-amber-600 bg-amber-50;
+}
+
+.stats-cards__icon--gray {
+  @apply text-gray-600 bg-gray-100;
+}
+
+.stats-cards__icon-svg {
+  @apply w-5 h-5;
+}
+
+.stats-cards__label {
+  @apply text-sm text-gray-500 mb-1;
+}
+
+.stats-cards__value {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+.stats-cards__sub-value {
+  @apply text-xs text-gray-400 mt-1;
+}

@@ -1,0 +1,53 @@
+@reference "tailwindcss";
+
+.activity-widgets {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-6;
+}
+
+.activity-widgets__card {
+  @apply p-6;
+}
+
+.activity-widgets__title {
+  @apply font-semibold text-gray-800 mb-4;
+}
+
+.activity-widgets__list {
+  @apply space-y-4;
+}
+
+.activity-widgets__member {
+  @apply flex items-center gap-3;
+}
+
+.activity-widgets__avatar {
+  @apply w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-medium text-sm;
+}
+
+.activity-widgets__name {
+  @apply font-medium text-gray-800;
+}
+
+.activity-widgets__role {
+  @apply text-sm text-gray-500;
+}
+
+.activity-widgets__activities {
+  @apply space-y-3;
+}
+
+.activity-widgets__activity {
+  @apply flex gap-3 text-sm;
+}
+
+.activity-widgets__activity-dot {
+  @apply w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 flex-shrink-0;
+}
+
+.activity-widgets__activity-text {
+  @apply text-gray-800;
+}
+
+.activity-widgets__activity-time {
+  @apply text-gray-400 text-xs mt-0.5;
+}

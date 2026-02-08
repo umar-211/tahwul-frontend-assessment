@@ -1,0 +1,44 @@
+/**
+ * Global Styles - Tailwind & Design Tokens
+ * Shared across the entire application
+ */
+
+@import "tailwindcss";
+
+/* Design tokens - Figma-inspired color palette */
+:root {
+  --color-sidebar: #1e3a5f;
+  --color-sidebar-hover: #2a4a6f;
+  --color-sidebar-active: #3b82f6;
+  --color-status-completed: #22c55e;
+  --color-status-in-progress: #eab308;
+  --color-status-under-review: #3b82f6;
+  --color-status-pending: #ef4444;
+  --color-status-delayed: #f97316;
+  --color-card-bg: #ffffff;
+  --color-content-bg: #f8fafc;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-content-bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Common typography utilities */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+}

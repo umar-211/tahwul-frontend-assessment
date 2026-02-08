@@ -1,0 +1,33 @@
+@reference "tailwindcss";
+
+.avatar {
+  @apply flex items-center gap-3;
+}
+
+.avatar__initials {
+  @apply rounded-full bg-blue-100 text-blue-700 font-medium flex items-center justify-center flex-shrink-0;
+}
+
+.avatar--sm .avatar__initials {
+  @apply w-8 h-8 text-xs;
+}
+
+.avatar--md .avatar__initials {
+  @apply w-10 h-10 text-sm;
+}
+
+.avatar--lg .avatar__initials {
+  @apply w-12 h-12 text-base;
+}
+
+.avatar__info {
+  @apply flex flex-col;
+}
+
+.avatar__name {
+  @apply font-medium text-gray-800;
+}
+
+.avatar__role {
+  @apply text-sm text-gray-500;
+}

@@ -1,0 +1,55 @@
+@reference "tailwindcss";
+
+.charts-section {
+  @apply grid grid-cols-1 gap-6;
+}
+
+.charts-section__card {
+  @apply p-6;
+}
+
+.charts-section__title {
+  @apply font-semibold text-gray-800 mb-4;
+}
+
+/* Semi-circle gauge cards (Compliance, Audit) */
+.charts-section__card--gauge {
+  @apply flex flex-col items-center;
+}
+
+.charts-section__gauge-wrap {
+  @apply relative w-full flex justify-center;
+  max-width: 200px;
+}
+
+.charts-section__gauge-label {
+  @apply absolute text-xl font-bold text-gray-800 pointer-events-none;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.charts-section__gauge-sublabel {
+  @apply text-sm text-gray-500 mt-1 mb-0;
+}
+
+.charts-section__audit-stats {
+  @apply flex gap-6 mt-4 w-full justify-center;
+}
+
+.charts-section__stat {
+  @apply text-sm text-gray-600 m-0;
+}
+
+.charts-section__stat-value {
+  @apply font-semibold text-gray-900;
+}
+
+/* 12-Month bar chart card */
+.charts-section__card--bar {
+  @apply min-w-0;
+}
+
+.charts-section__bar-chart-wrap {
+  @apply w-full;
+}

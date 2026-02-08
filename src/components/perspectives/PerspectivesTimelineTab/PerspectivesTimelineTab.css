@@ -1,0 +1,74 @@
+@reference "tailwindcss";
+
+.perspectives-timeline {
+  @apply space-y-4;
+}
+
+.perspectives-timeline__table-card {
+  @apply p-0 overflow-hidden;
+}
+
+.perspectives-timeline__table-wrap {
+  @apply overflow-x-auto;
+}
+
+.perspectives-timeline__table {
+  @apply w-full text-sm border-collapse;
+}
+
+.perspectives-timeline__table th {
+  @apply text-left font-medium text-gray-600 bg-gray-50 px-4 py-3 border-b border-gray-200;
+}
+
+.perspectives-timeline__table td {
+  @apply px-4 py-3 border-b border-gray-100;
+}
+
+.perspectives-timeline__priority {
+  @apply text-gray-500 mr-2;
+}
+
+.perspectives-timeline__status {
+  @apply inline-block px-2 py-0.5 rounded text-xs font-medium;
+}
+
+.perspectives-timeline__status--in-progress {
+  @apply bg-amber-100 text-amber-800;
+}
+
+.perspectives-timeline__status--complete {
+  @apply bg-green-100 text-green-800;
+}
+
+.perspectives-timeline__status--overdue {
+  @apply bg-red-100 text-red-800;
+}
+
+.perspectives-timeline__action {
+  @apply text-blue-600 hover:underline text-xs font-medium;
+}
+
+.perspectives-timeline__bottom {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.perspectives-timeline__chat-card,
+.perspectives-timeline__activities-card {
+  @apply p-4;
+}
+
+.perspectives-timeline__chat {
+  @apply flex items-center gap-2 text-gray-600;
+}
+
+.perspectives-timeline__chat-icon {
+  @apply w-5 h-5 flex-shrink-0;
+}
+
+.perspectives-timeline__activities-title {
+  @apply font-medium text-gray-800 mb-2 m-0 text-sm;
+}
+
+.perspectives-timeline__activities-list {
+  @apply text-sm text-gray-600 list-decimal list-inside space-y-1 m-0 pl-0;
+}

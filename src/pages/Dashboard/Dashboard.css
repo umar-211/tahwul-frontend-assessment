@@ -1,0 +1,17 @@
+@reference "tailwindcss";
+
+.dashboard {
+  @apply space-y-6;
+}
+
+.dashboard__cards-top {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6 mb-6;
+}
+
+.dashboard__charts-bottom {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8;
+}
+
+.dashboard__charts-bottom > *:first-child {
+  @apply lg:col-span-2;
+}
