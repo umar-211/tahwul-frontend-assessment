@@ -94,7 +94,7 @@
 }
 
 .perspectives-evidence__post-btn {
-  @apply inline-flex items-center gap-2 px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors;
+  @apply inline-flex items-center gap-2 px-4 py-2.5 bg-[#1D3557] text-white text-sm font-medium rounded-lg hover:bg-[#274360] transition-colors;
 }
 
 .perspectives-evidence__post-icon {

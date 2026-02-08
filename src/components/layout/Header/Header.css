@@ -8,16 +8,11 @@
   @apply flex items-center gap-2 ml-auto;
 }
 
+/* Hide menu button on desktop (no collapse icon) */
 .header__menu-btn {
-  @apply flex-shrink-0 w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-gray-50;
+  @apply flex-shrink-0 w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-gray-50 lg:hidden;
 }
 
-/* Hide menu button on desktop (no collapse icon) */
-@media (min-width: 1024px) {
-  .header__menu-btn {
-    display: none;
-  }
-}
 
 .header__menu-icon {
   @apply w-5 h-5;

@@ -5,8 +5,7 @@
 }
 
 .sidebar {
-  @apply w-64 min-h-screen flex flex-col fixed left-0 top-0 z-50 transform transition-transform duration-200 ease-in-out lg:translate-x-0;
-  background-color: var(--color-sidebar);
+  @apply w-64 min-h-screen flex flex-col fixed left-0 top-0 z-50 transform transition-transform duration-200 ease-in-out lg:translate-x-0 bg-[var(--color-sidebar)];
 }
 
 /* Hide on mobile when closed; always visible on lg+ */
@@ -47,7 +46,7 @@
 }
 
 .sidebar__nav-item--active {
-  @apply bg-blue-500 text-white;
+  @apply bg-[#1D3557] text-white;
 }
 
 .sidebar__footer {

@@ -18,15 +18,11 @@
 }
 
 .charts-section__gauge-wrap {
-  @apply relative w-full flex justify-center;
-  max-width: 200px;
+  @apply relative flex w-full max-w-[200px] justify-center;
 }
 
 .charts-section__gauge-label {
-  @apply absolute text-xl font-bold text-gray-800 pointer-events-none;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  @apply absolute bottom-2.5 left-1/2 text-xl font-bold text-gray-800 -translate-x-1/2 pointer-events-none;
 }
 
 .charts-section__gauge-sublabel {

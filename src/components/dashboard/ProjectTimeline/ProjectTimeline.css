@@ -1,15 +1,29 @@
 @reference "tailwindcss";
 
 .project-timeline-card {
-  @apply shadow-md border border-gray-100 rounded-lg p-6 mb-6 overflow-visible;
+  @apply overflow-hidden rounded-lg border border-gray-100 p-4 shadow-md mb-6 sm:p-5 md:p-6;
 }
 
 .project-timeline__header {
-  @apply flex items-center justify-between;
+  @apply flex flex-wrap items-center justify-between gap-3 sm:gap-4;
 }
 
 .project-timeline__title {
-  @apply text-lg font-bold text-gray-900 m-0;
+  @apply m-0 text-base font-bold text-gray-900 min-w-0 sm:text-lg;
+}
+
+/* Horizontally scrollable on mobile/tablet so labels don't overlap */
+.project-timeline__scroll {
+  @apply -mx-1 overflow-x-auto overflow-y-visible overscroll-x-contain md:mx-0;
+  scrollbar-width: thin;
+}
+
+.project-timeline__scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.project-timeline__scroll::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-gray-300;
 }
 
 .project-timeline__year-wrap {
@@ -24,56 +38,42 @@
   @apply absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none;
 }
 
+/* Min width keeps labels from overlapping; horizontal scroll when card is narrower */
 .project-timeline__track-wrap {
-  @apply relative pt-2 pb-8 px-2;
-  min-height: 5rem;
+  @apply relative min-h-20 min-w-[64rem] px-2 pt-2 pb-8;
 }
 
 .project-timeline__track {
-  @apply absolute left-0 right-0 bg-gray-200;
-  top: 0.5rem;
-  height: 8px;
-  border-radius: 9999px;
+  @apply absolute left-0 right-0 top-2 h-2 rounded-full bg-gray-200;
 }
 
 .project-timeline__track--completed {
-  @apply bg-green-500 transition-all duration-300;
-  height: 8px;
-  border-radius: 9999px;
+  @apply h-2 rounded-full bg-green-500 transition-all duration-300;
 }
 
 .project-timeline__milestones {
-  @apply absolute left-0 right-0;
-  top: 0.5rem;
-  height: 8px;
-  pointer-events: none;
+  @apply absolute left-0 right-0 top-2 h-2 pointer-events-none;
 }
 
 .project-timeline__milestones .project-timeline__milestone {
-  pointer-events: auto;
+  @apply pointer-events-auto;
 }
 
 .project-timeline__milestone {
-  @apply absolute flex flex-col items-center -translate-x-1/2;
-  top: 0;
+  @apply absolute top-0 flex flex-col items-center -translate-x-1/2;
 }
 
 /* Dot sits in the line row (first 6px) so it’s inside the line */
 .project-timeline__milestone .project-timeline__dot {
-  width: 8px;
-  height: 8px;
-  @apply rounded-full flex-shrink-0 z-10;
-  margin: 0;
+  @apply m-0 h-2 w-2 flex-shrink-0 rounded-full z-10;
 }
 
 .project-timeline__dot--completed-solid {
-  @apply bg-white;
-  border: 1px solid rgb(229 231 235);
+  @apply border border-gray-200 bg-white;
 }
 
 .project-timeline__dot--completed-outline {
-  @apply bg-transparent;
-  border: 1px solid white;
+  @apply border border-white bg-transparent;
 }
 
 .project-timeline__dot--incomplete {
@@ -81,15 +81,13 @@
 }
 
 .project-timeline__label {
-  @apply mt-2 text-center flex flex-col gap-0.5 min-w-0 max-w-[10rem] px-1;
-  position: relative;
-  top: 6px;
+  @apply relative top-1.5 mt-2 flex min-w-0 max-w-[8rem] flex-col gap-0.5 break-words px-1 text-center sm:max-w-[10rem];
 }
 
 .project-timeline__label-date {
-  @apply text-xs text-gray-500;
+  @apply text-[10px] text-gray-500 sm:text-xs;
 }
 
 .project-timeline__label-desc {
-  @apply text-xs font-medium text-gray-700;
+  @apply text-[10px] font-medium leading-tight text-gray-700 sm:text-xs;
 }

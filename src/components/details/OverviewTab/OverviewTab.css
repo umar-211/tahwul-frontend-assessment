@@ -21,5 +21,5 @@
 }
 
 .overview-tab__text--pre {
-  white-space: pre-line;
+  @apply whitespace-pre-line;
 }

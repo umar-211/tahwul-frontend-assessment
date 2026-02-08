@@ -18,8 +18,7 @@
 }
 
 .stat-card__icon--top-right {
-  @apply absolute top-4 right-4 w-9 h-9 rounded flex items-center justify-center;
-  margin-bottom: 0;
+  @apply absolute top-4 right-4 w-9 h-9 rounded flex items-center justify-center mb-0;
 }
 
 .stat-card__icon--top-right svg {

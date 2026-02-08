@@ -10,6 +10,7 @@
   --color-sidebar: #1e3a5f;
   --color-sidebar-hover: #2a4a6f;
   --color-sidebar-active: #3b82f6;
+  --color-brand: #1D3557;
   --color-status-completed: #22c55e;
   --color-status-in-progress: #eab308;
   --color-status-under-review: #3b82f6;
@@ -19,26 +20,20 @@
   --color-content-bg: #f8fafc;
 }
 
-/* Base styles */
+/* Base styles - Tailwind preflight sets box-sizing; we keep it explicit for clarity */
 * {
-  box-sizing: border-box;
+  @apply box-border;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-content-bg);
+  @apply m-0 min-h-screen font-sans antialiased bg-[var(--color-content-bg)];
 }
 
 #root {
-  min-height: 100vh;
+  @apply min-h-screen;
 }
 
 /* Common typography utilities */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  line-height: 1.3;
+  @apply font-semibold leading-tight;
 }

@@ -43,8 +43,9 @@ export default function ProjectTimeline() {
         </div>
       </div>
 
-      <div className="project-timeline__track-wrap">
-        <div className="project-timeline__track">
+      <div className="project-timeline__scroll">
+        <div className="project-timeline__track-wrap">
+          <div className="project-timeline__track">
           <div
             className="project-timeline__track--completed"
             style={{ width: `${secondCompletedPosition}%` }}
@@ -75,6 +76,7 @@ export default function ProjectTimeline() {
               </div>
             );
           })}
+        </div>
         </div>
       </div>
     </Card>
