@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import Avatar from '../../ui/Avatar';
 import { CloseIcon } from '../../../assets/icons';
+import { tahwulLogo } from '../../../assets/images';
 import './Sidebar.css';
 
 const navItems = [
@@ -24,7 +24,11 @@ export default function Sidebar({ isOpen = false, onClose }) {
       )}
       <aside className={`sidebar ${isOpen ? 'sidebar--open' : 'sidebar--closed'}`}>
         <div className="sidebar__header">
-          <h1 className="sidebar__logo">TAHWUL</h1>
+          <img
+            src={tahwulLogo}
+            alt="TAHWUL - Enabling Digital Transformation"
+            className="sidebar__logo-img"
+          />
           <button
             onClick={onClose}
             className="sidebar__close-btn"
